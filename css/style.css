@@ -1,68 +1,4 @@
-/* poppins-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/poppins-v20-latin-regular.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/poppins-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/poppins-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/poppins-v20-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
-  }
-  /* poppins-500 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/poppins-v20-latin-500.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/poppins-v20-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/poppins-v20-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/poppins-v20-latin-500.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/poppins-v20-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/poppins-v20-latin-500.svg#Poppins') format('svg'); /* Legacy iOS */
-  }
-  /* poppins-600 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/poppins-v20-latin-600.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/poppins-v20-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/poppins-v20-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/poppins-v20-latin-600.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/poppins-v20-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/poppins-v20-latin-600.svg#Poppins') format('svg'); /* Legacy iOS */
-  }
-  /* poppins-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/poppins-v20-latin-700.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/poppins-v20-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/poppins-v20-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/poppins-v20-latin-700.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/poppins-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/poppins-v20-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
-  }
-  /* poppins-900 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 900;
-    src: url('../fonts/poppins-v20-latin-900.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/poppins-v20-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/poppins-v20-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/poppins-v20-latin-900.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/poppins-v20-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/poppins-v20-latin-900.svg#Poppins') format('svg'); /* Legacy iOS */
-  }
+
 
   html{
     box-sizing: border-box;
@@ -71,7 +7,7 @@
     box-sizing: inherit;
 }
 body{
-    font-family: 'Poppins';
+    font-family: 'Golos Text', sans-serif;
     font-style: normal;
 }
 img{
@@ -94,6 +30,7 @@ img{
     width: 100%;
     left: 0;
     top: 0;
+    transition: .2s linear;
     z-index: 100;
 }
 .header__active{
@@ -122,7 +59,30 @@ img{
     color: white;
 }
 .header__lang-ru{
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: white;
     padding-right: 8px;
+}
+.header__lang-en{
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.translate:hover {
+    color:#9d2416 ;
+}
+.translate:focus {
+    color: #DB2512;
 }
 .header__nav_link:hover, .header__nav_link:focus, .header__nav_link:active{
     opacity: 0.5;

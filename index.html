@@ -13,6 +13,9 @@
     <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -27,22 +30,22 @@
             <nav class="header__nav">
                 <ul class="header__ul">
                     <li class="header__list">
-                        <a href="" class="header__nav_link">Main</a>
+                        <a href="" class="header__nav_link lang" key="main">Main</a>
                     </li>
                     <li class="header__list">
-                        <a href="" class="header__nav_link">Our services</a>
+                        <a href="" class="header__nav_link lang" key="services">Our services</a>
                     </li>
                     <li class="header__list">
-                        <a href="" class="header__nav_link">About</a>
+                        <a href="" class="header__nav_link lang" key="about">About</a>
                     </li>
                     <li class="header__list">
-                        <a href="" class="header__nav_link">Contacts</a>
+                        <a href="" class="header__nav_link lang" key="contacts">Contacts</a>
                     </li>
                 </ul>
             </nav>
             <div class="header__lang">
-                <img src="./img/svg/ru.svg" alt="ru" class="header__lang-ru">
-                <img src="./img/svg/en.svg" alt="en" class="header__lang-en">
+                <button class="header__lang-ru translate" id="ru">RU</button>
+                <button class="header__lang-en translate" id="en">EN</button>
             </div>
         </div>
         </div>
@@ -52,9 +55,9 @@
 
     <section class="info">
         <div class="wrapper">
-            <h1 class="info__title">KEEPING YOU ON THE ROAD WITH SERVICE YOU CAN TRUST</h1>
+            <h1 class="info__title lang" key="keeping">KEEPING YOU ON THE ROAD WITH SERVICE YOU CAN TRUST</h1>
             <div class="info__batton">
-                <button class="info__show" type="submit">Show more</button>
+                <button class="info__show lang" key="more" type="submit">Show more</button>
             </div>
         </div>
     </section>
@@ -69,10 +72,10 @@
                     <div class="card">
                         <div class="card__info">
                         <img src="./img/svg/tel.svg" alt="telephone" class="card__pic">
-                        <h3 class="card__title">
+                        <h3 class="card__title lang" key="call">
                             CALL US NOW 222-222-222
                         </h3>
-                        <span class="card__text">
+                        <span class="card__text lang" key="feel">
                             Feel free to call us
                         </span>  
                     </div>
@@ -80,10 +83,10 @@
                     <div class="card">
                         <div class="card__info">
                         <img src="./img/svg/calendar.svg" alt="calendar" class="card__pic">
-                        <h3 class="card__title">
+                        <h3 class="card__title lang" key="get">
                             GET FREE APPOITMET
                         </h3>
-                        <span class="card__text">
+                        <span class="card__text lang" key="free">
                             Free Diagnosis & Brake Checks
                         </span>  
                     </div>
@@ -91,10 +94,10 @@
                     <div class="card">
                         <div class="card__info">
                         <img src="./img/svg/map.svg" alt="map" class="card__pic">
-                        <h3 class="card__title">
+                        <h3 class="card__title lang" key="find">
                             FIND US ON MAP
                         </h3>
-                        <span class="card__text">
+                        <span class="card__text lang" key="new">
                             New York, 1286 Ruumu Nanor
                         </span>  
                     </div>
@@ -109,20 +112,20 @@
 
     <div class="services">
         <div class="wrapper">
-            <h2 class="services__title">OUR SERVICES</h2>
-            <span class="services__title-text"> <a href="#!" class="services__title-link">VIEW ALL SERVICES</a></span>
+            <h2 class="services__title lang" key="our">OUR SERVICES</h2>
+            <span class="services__title-text"> <a href="#!" class="services__title-link lang" key="view">VIEW ALL SERVICES</a></span>
             <div class="services__cards">
                 <div class="services__card">
                     <a href="#!" class="services__card-link"> <img src="./img/diagnostic.jpg" alt="diagnostic" class="services__card-pic"> </a>
-                    <h3 class="services__card-title">DIAGNOSTIC</h3>
+                    <h3 class="services__card-title lang" key="diagnostic">DIAGNOSTIC</h3>
                 </div>
                 <div class="services__card">
                     <a href="#!" class="services__card-link"> <img src="./img/whils.jpg" alt="diagnostic" class="services__card-pic"> </a>
-                    <h3 class="services__card-title">TIRES & WHEELS</h3>
+                    <h3 class="services__card-title lang" key="tires">TIRES & WHEELS</h3>
                 </div>
                 <div class="services__card">
                     <a href="#!" class="services__card-link"> <img src="./img/engin.jpg" alt="diagnostic" class="services__card-pic"> </a>
-                    <h3 class="services__card-title">ENGINES</h3>
+                    <h3 class="services__card-title lang" key="engines">ENGINES</h3>
                 </div>
             </div>
         </div>
@@ -135,9 +138,9 @@
     <div class="about">
         <div class="wrapper about__wrapper">
                 <div class="about__info">
-                    <h2 class="about__title">WE UNDERSTAND HOW IMPORTANT IT IS TO FIND THE RIGHT AUTO SERVICE</h2>
-                    <p class="about__text">Car repairs and maintenance can be expensive and no one wants to have pay to repair damage caused by shoddy repair service. When you bring your car into our auto shop, you won’t have to worry because our staff is comprised of ASE certified technicians who are committed to making sure you have a safe dependable car.</p>
-                    <a href="#!" class="about__link">MORE ABOUT US</a>
+                    <h2 class="about__title lang" key="we">WE UNDERSTAND HOW IMPORTANT IT IS TO FIND THE RIGHT AUTO SERVICE</h2>
+                    <p class="about__text lang" key="car">Car repairs and maintenance can be expensive and no one wants to have pay to repair damage caused by shoddy repair service. When you bring your car into our auto shop, you won’t have to worry because our staff is comprised of ASE certified technicians who are committed to making sure you have a safe dependable car.</p>
+                    <a href="#!" class="about__link lang" key="m">MORE ABOUT US</a>
                 </div>
                 <img src="./img/service.jpg" alt="about us" class="about__pic">
         </div>
@@ -150,20 +153,20 @@
 
     <div class="process">
         <div class="wrapper process-wrapper">
-            <h2 class="process-title">FAST & EASY</h2>
-            <p class="process-text">our work process</p>
+            <h2 class="process-title lang" key="fast">FAST & EASY</h2>
+            <p class="process-text lang" key="o">our work process</p>
             <div class="process-advantage">
                 <div class="advantage">
-                    <h3 class="advantage-title">1.REQUEST YOUR QUOTE</h3>
-                    <p class="advantage-text">We will be there when you most need us</p>
+                    <h3 class="advantage-title lang" key="1">1.REQUEST YOUR QUOTE</h3>
+                    <p class="advantage-text lang" key="will">We will be there when you most need us</p>
                 </div>
                 <div class="advantage">
-                    <h3 class="advantage-title">02. BRING YOUR VEHICLE</h3>
-                    <p class="advantage-text">We are car guys at heart</p>
+                    <h3 class="advantage-title lang" key="2">02. BRING YOUR VEHICLE</h3>
+                    <p class="advantage-text lang" key="are">We are car guys at heart</p>
                 </div>
                 <div class="advantage">
-                    <h3 class="advantage-title">03. GET IT REPAIRED</h3>
-                    <p class="advantage-text">High quality, low cost car servicing</p>
+                    <h3 class="advantage-title lang" key="3">03. GET IT REPAIRED</h3>
+                    <p class="advantage-text lang" key="high">High quality, low cost car servicing</p>
                 </div>
             </div>
         </div>
@@ -176,7 +179,7 @@
 
     <div class="contacts">
         <div class="wrapper contacts-wrapper">
-            <p class="contacts-text">Contact us</p>
+            <p class="contacts-text lang" key="contact">Contact us</p>
             <form class="contacts-form">
                 <fieldset class="contacts-form-wrap">
                     <p class="contacts-form-info">
@@ -185,7 +188,7 @@
                         <input type="text" name="Email" class="contacts-form-fild" placeholder="Email">
                         <input type="text" name="Phone" class="contacts-form-fild contacts-fild" placeholder="Phone">
                         <input type="text" name="Message" class="contacts-form-fild contacts-form-fild_lg" placeholder="Message">
-                        <button type="submit" class="contscts-form-send">Send</button>
+                        <button type="submit" class="contscts-form-send lang" key="send">Send</button>
                     </p>
                 </fieldset>
             </form>
